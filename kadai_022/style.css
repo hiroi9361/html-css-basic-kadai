@@ -1,0 +1,73 @@
+/* 下準備 */
+h1{
+    margin: 0px 0px 0px 0px;
+}
+a{
+    margin: 0px 0px 0px 0px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+p {
+    margin: 0px 0px 0px 0px;
+    font-size: 20px;
+}
+header {
+    margin-bottom: 20px;
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+/* メイン */
+#margin3 {
+    margin: 10px 10px 10px 10px;
+}
+#parent {
+   display: flex;
+   justify-content: space-between;
+}
+.contents {
+    border: solid 3px rgb(238, 204, 204);
+    flex-basis: 25%;
+    padding: 10px 15px 10px 15px;
+    margin: 20px 0px 20px 0;
+    text-align: center;
+}
+h2{
+    font-size: 25px;
+    border-bottom: 3px dotted rgb(236, 122, 122);
+}
+h2::before {
+    content: '●';
+    color: rgb(239, 111, 139);
+}
+p:nth-child(3)::first-letter {
+    font-weight: borld;
+    color: rgb(97, 206, 249);
+}
+.picture1 {
+    margin: 10px 0px 10px 0px;
+    width: 70%;
+}
+/* フッター */
+footer {
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+}
+a:hover {
+    color: rgb(245, 178, 168);
+}
+a:visited {
+    color: rgb(193, 234, 251);
+}
+/* 画面表示 */
+@media screen and (max-width:768px) {
+    h2{
+      font-size: 30px;  
+    }
+    p {
+        font-size: 25px;
+    }
+    #parent{
+        display: block;
+    }
+}
